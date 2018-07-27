@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+	<title>Proyecto</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+ </head>
+  <body>
+    <div class="container"> 
+      <h1>Ruski  Library</h1>
+      <div class="libros">
+        <div class="cd">
+          <img src="img/fisica.jpg">
+          <section class="item">
+            <p>₡2.000 c/u</p>
+          </section>
+        </div>
+        <div class="cd">
+          <img src="img/matematicas.jpg"> 
+          <section class="item">
+            <p>₡4.000 c/u</p>
+          </section>
+        </div> 
+        <div class="cd">
+         <img src="img/sociales.png">
+         <section class="item">
+            <p>₡5.000 c/u</p>
+         </section>
+        </div>   
+      </div>
+      <form name="formulario" method="post">
+       <label>Nombre:</label>
+       <input type="text" name="Nombre" required > 
+       <label for="id" id="direccion" required>ID</label> 
+       <input type="number" name="id" required> 
+       <label>Tipo de cliente</label>
+       <select name="Tipo de cliente">
+         <option name="categoria" value="Ninguna">Ninguna</option>
+         <option name="categoria" value="1">1</option>
+         <option name="categoria" value="2">2</option>
+         <option name="categoria" value="3">3</option>
+         <option name="categoria" value="otra">Otra</option>
+       </select>
+
+       <p>Cantidad de libros que desea comprar</p>
+       <br>
+       <label for="sociales">Sociales</label>
+       <input  type="text" name="sociales" class="cantidad"> 
+       <label for="fisica">Fisica</label>
+       <input type="text" name="fisica" class="cantidad">
+       <label for="matematicas">Matematicas</label>
+       <input type="text" name="matematicas" class="cantidad">
+       <button type="submit" name="Comprar" class="comprar">Comprar</button>
+      </form>
+    </div>
+   <script type="text/javascript" src="proyecto.js"></script>
+  </body>
+</html>
